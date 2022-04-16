@@ -1,0 +1,20 @@
+[
+  {
+    "id": "1",
+    "name": "Interior Design",
+    "img": "https://www.homehubinteriors.com/wp-content/uploads/2018/09/IMG-20180904-WA0005-1080x675.jpg",
+    "comment": "You may want a-lot of power but you wont need it. And it burbles when you shift at the right moment. Has a-lot of space and the sleek look makes everything look 10 times better. "
+  },
+  {
+    "id": "2",
+    "name": "Exterior Design",
+    "img": "https://www.residencestyle.com/wp-content/uploads/2014/12/luxury-holiday-home1.jpg",
+    "comment": "You can gap people easily if you race and it keeps up with a M850 at first. Downside is its not the best for really long road trips for the driver."
+  },
+  {
+    "id": "3",
+    "name": "Full Package",
+    "img": "https://www.residencestyle.com/wp-content/uploads/2014/12/Architecture-Art-Contemporary-Designs.jpg",
+    "comment": "I always thought the X6 design is unique, sporty and more aggressive (compared to the traditional boxy SUVs like the X5). "
+  }
+]
