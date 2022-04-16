@@ -1,20 +1,26 @@
 [
   {
     "id": "1",
-    "name": "Interior Design",
+    "pakage": "Interior Design",
     "img": "https://www.homehubinteriors.com/wp-content/uploads/2018/09/IMG-20180904-WA0005-1080x675.jpg",
-    "comment": "You may want a-lot of power but you wont need it. And it burbles when you shift at the right moment. Has a-lot of space and the sleek look makes everything look 10 times better. "
+    "comment": "You can gap people easily.",
+    "comment1": "You can gap people easily.",
+    "comment2": "You can gap people easily."
   },
   {
     "id": "2",
-    "name": "Exterior Design",
+    "pakage": "Exterior Design",
     "img": "https://www.residencestyle.com/wp-content/uploads/2014/12/luxury-holiday-home1.jpg",
-    "comment": "You can gap people easily if you race and it keeps up with a M850 at first. Downside is its not the best for really long road trips for the driver."
+    "comment": "You can gap people easily.",
+    "comment1": "You can gap people easily. ",
+    "comment2": "You can gap people easily. "
   },
   {
     "id": "3",
-    "name": "Full Package",
+    "pakage": "Full Package",
     "img": "https://www.residencestyle.com/wp-content/uploads/2014/12/Architecture-Art-Contemporary-Designs.jpg",
-    "comment": "I always thought the X6 design is unique, sporty and more aggressive (compared to the traditional boxy SUVs like the X5). "
+    "comment": "You can gap people easily.",
+    "comment1": "You can gap people easily. ",
+    "comment2": "You can gap people easily."
   }
 ]
