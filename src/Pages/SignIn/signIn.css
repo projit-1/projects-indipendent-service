@@ -1,5 +1,14 @@
+.form-link {
+    color: darkgoldenrod;
+    text-decoration: none;
+}
+
 .sign {
-    height: 5px;
-    background-color: bisque;
-    margin: 10px;
+    height: 3px;
+    background-color: rgb(201, 193, 184);
+    margin: 12px;
+}
+
+.with-google {
+    margin-left: 300px;
 }
