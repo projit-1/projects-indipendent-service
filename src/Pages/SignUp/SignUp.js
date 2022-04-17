@@ -24,7 +24,7 @@ const SignUp = () => {
     }
 
     if (user) {
-        navigate('/home');
+        navigate('/services');
     }
     // const handleEmailBlur = event => {
     //     setEmail(event.target.value);

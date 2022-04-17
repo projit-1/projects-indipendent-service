@@ -1,5 +1,6 @@
 import React from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Service = (props) => {
     const { pakage, img, comment, comment1, comment2 } = props.service;
@@ -10,7 +11,8 @@ const Service = (props) => {
             <p className='w-100 text-center'>{comment}</p>
             <p className='w-100 text-center'>{comment1}</p>
             <p className='w-100 text-center'>{comment2}</p>
-            <Button variant="primary w-50 mx-5">STARTED HERE</Button>{' '}
+            <Link to='/services'>  <Button variant="primary w-50 mx-5">STARTED HERE</Button>{' '}</Link>
+
         </div>
     );
 };

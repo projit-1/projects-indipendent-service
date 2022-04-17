@@ -27,7 +27,7 @@ const SignIn = () => {
         setPassword(event.target.value);
     }
     if (user) {
-        navigate("/home");
+        navigate("/services");
     }
 
 

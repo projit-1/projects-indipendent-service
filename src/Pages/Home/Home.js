@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 import bannerimg from '../../images/banner.png'
 import Service from '../Service/Service';
@@ -23,9 +24,13 @@ const Home = () => {
                         An-awards winning architect company
                     </h1>
                     <p className='text-light'>Like any great agency, we are only as good as the result we deliver of our recent work</p>
-                    <Button variant="primary" >
-                        GET STARTED
-                    </Button>{ }
+
+                    <Link to='/services'>
+                        <Button variant="primary" >
+                            GET STARTED
+                        </Button>{ }
+                    </Link>
+
                     <hr className='text-light' />
                     <p className='text-light'>If you're hurry, quick call for us. Our supporters alway 24/7 and will help you asap</p>
                 </div >
