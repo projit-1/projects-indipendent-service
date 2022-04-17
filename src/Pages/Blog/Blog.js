@@ -12,7 +12,7 @@ const Blog = () => {
             <div className="second-question">
                 <h2> 2.  What are the uses of Firebase</h2>
                 <p> Firebase a most popular and worldwide used a Google-backed app development platform which was initially developed by James Tamplin and Andrew Lee in 2011. This magnificent and widely used programming app was officially launched in 2012, and right after the two years of launch, Google acquired this platform. There are several advantages of using firebase, these are given by following: </p>
-                <hr />
+
                 <p> 1. Real-time database helps to store and synchronize data and very significantly re-useable. </p>
                 <p>2. Firebase has become smarter with Google analytics.</p>
                 <p>3. Firebase generally offers facility of crash reporting to fix bugs quickly and smartly.</p>
@@ -26,6 +26,15 @@ const Blog = () => {
                     Finally the facility of in-app advertising can’t be ignored.
                 </p>
                 <p>So we can say that Firebase is one of the effective, efficient, smart platforms what people want, that have made the task of the app developers simpler to much extent.</p>
+            </div>
+            <div className="third-question">
+                <h2> 3. What other services does firebase provide other than authentication</h2>
+                <p>Firebase is a full package that can help in developing your mobile or web operations briskly with smaller coffers and further effectiveness. </p>
+                <p>There are numerous services which Firebase provides, Utmost useful of them are:</p>
+                <p>Cloud Firestore, Pall Functions, Authentication, Hosting, Cloud Storage, Google Analytics, Prognostications, Pall Messaging, Dynamic Links, and Remote Config. </p>
+                <p> This composition purely focuses on how firebase services can make the mobile operation development process easier. </p>
+                <p>We know that the extensively used services for this purpose are Cloud Messaging, Authentication, Dynamic Links, Prognostications, Google Analytics, and Remote Config. Let’s bandy these services in detail.</p>
+
             </div>
         </div>
     );

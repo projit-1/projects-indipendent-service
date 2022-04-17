@@ -10,7 +10,7 @@ const Service = (props) => {
             <p className='w-100 text-center'>{comment}</p>
             <p className='w-100 text-center'>{comment1}</p>
             <p className='w-100 text-center'>{comment2}</p>
-            <Button variant="primary w-50 mx-5">Primary</Button>{' '}
+            <Button variant="primary w-50 mx-5">STARTED HERE</Button>{' '}
         </div>
     );
 };
