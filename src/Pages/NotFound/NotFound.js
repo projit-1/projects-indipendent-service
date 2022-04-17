@@ -1,9 +1,11 @@
 import React from 'react';
+import image from '../../images/notfound.jpg'
+import './NotFound.css'
 
 const NotFound = () => {
     return (
-        <div>
-            <h3>404</h3>
+        <div className=' container my-5 mx-auto not-found'>
+            <img src={image} alt="" />
         </div>
     );
 };

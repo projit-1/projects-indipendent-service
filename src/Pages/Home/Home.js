@@ -28,7 +28,7 @@ const Home = () => {
                     <img className='w-100 my-5' src={bannerimg} alt="" />
                 </div>
             </div>
-            <div className="services">
+            <div id='#servises' className="services ">
                 <h2 className='text-center bg-dark text-light mt-1 py-2' >Our Services</h2>
                 <div className='row row-cols-3 w-100'>
 
