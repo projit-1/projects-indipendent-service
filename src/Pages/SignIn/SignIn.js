@@ -1,22 +1,58 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { Link, useNavigate } from 'react-router-dom';
+import auth from '../../firebase.init';
 import './signIn.css'
 
 const SignIn = () => {
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+    const [
+        signInWithEmailAndPassword,
+        user,
+        loading,
+        error,
+    ] = useSignInWithEmailAndPassword(auth);
+
+    const navigate = useNavigate();
+
+    const handleEmailBlur = event => {
+        setEmail(event.target.value);
+
+    }
+
+    const handlePasswordBlur = event => {
+        setPassword(event.target.value);
+    }
+    if (user) {
+        navigate("/home");
+    }
+
+
+    const handleUserSignIn = event => {
+        event.preventDefault();
+        signInWithEmailAndPassword(email, password);
+
+    }
+
     return (
         <div>
-            <Form className='w-50 mx-auto'>
+            <h3 className='w-50 mx-auto bg-dark mt-2 text-light py-2 px-5 text-center'>Sign In</h3>
+            <Form onSubmit={handleUserSignIn} className='w-50 mx-auto mt-3'>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Label>Email address</Form.Label>
-                    <Form.Control type="email" placeholder="Enter email" required />
+                    <Form.Label>Email address *</Form.Label>
+                    <Form.Control onBlur={handleEmailBlur} type="email" placeholder="Enter email" required />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Label>Password</Form.Label>
-                    <Form.Control type="password" placeholder="Password" required />
+                    <Form.Label>Password *</Form.Label>
+                    <Form.Control onBlur={handlePasswordBlur} type="password" placeholder="Password" required />
                 </Form.Group>
-                <Form.Group className="mb-3" controlId="formBasicCheckbox">
-                </Form.Group>
+                <p className='text-danger'>{error?.message}</p>
+                {
+                    loading && <p>Loading ... </p>
+                }
                 <Button variant="primary" type="submit">
                     Sign In
                 </Button>

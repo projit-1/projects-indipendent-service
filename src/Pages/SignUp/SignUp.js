@@ -50,7 +50,7 @@ const SignUp = () => {
     }
     return (
         <div>
-            <h3 className='w-50 mx-auto bg-dark mt-2 text-light py-2 px-5'>Register Here</h3>
+            <h3 className='w-50 mx-auto bg-dark mt-2 text-light py-2 px-5 text-center'>Register Here</h3>
             <Form onSubmit={handeCreateUser} className='w-50 mx-auto'>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Email address *</Form.Label>

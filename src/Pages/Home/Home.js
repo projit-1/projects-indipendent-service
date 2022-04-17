@@ -1,7 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
+
 import bannerimg from '../../images/banner.png'
 import Service from '../Service/Service';
+
 
 
 
@@ -12,6 +14,7 @@ const Home = () => {
             .then(res => res.json())
             .then(data => setServices(data))
     }, [])
+
     return (
         <div >
             <div className='d-flex bg-dark'>
@@ -20,7 +23,9 @@ const Home = () => {
                         An-awards winning architect company
                     </h1>
                     <p className='text-light'>Like any great agency, we are only as good as the result we deliver of our recent work</p>
-                    <Button variant="primary" >GET STARTED</Button>{' '}
+                    <Button variant="primary" >
+                        GET STARTED
+                    </Button>{ }
                     <hr className='text-light' />
                     <p className='text-light'>If you're hurry, quick call for us. Our supporters alway 24/7 and will help you asap</p>
                 </div >
