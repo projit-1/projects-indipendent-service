@@ -4,6 +4,7 @@ import { Button, Form } from 'react-bootstrap';
 const SignUp = () => {
     return (
         <div>
+            <h3 className='w-50 mx-auto bg-dark mt-2 text-light py-2 px-5'>Register Here</h3>
             <Form className='w-50 mx-auto'>
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Name *</Form.Label>
