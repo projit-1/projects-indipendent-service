@@ -60,7 +60,7 @@ const SignIn = () => {
                 {
                     loading && <p>Loading ... </p>
                 }
-                <Button variant="primary" type="submit">
+                <Button className='w-50 mx-auto d-block my-3' variant="primary" type="submit">
                     Sign In
                 </Button>
                 <p>

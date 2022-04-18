@@ -64,7 +64,7 @@ const SignUp = () => {
                     <Form.Control onBlur={handleConfirmPasswordBlur} type="password" placeholder="Confirm Password" required />
                 </Form.Group>
                 <p className='text-danger'>{error}</p>
-                <Button variant="primary" type="submit">
+                <Button className='w-50 mx-auto d-block my-3' variant="primary" type="submit">
                     Sign Up
                 </Button>
                 <p>

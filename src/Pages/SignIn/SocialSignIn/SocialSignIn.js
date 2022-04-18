@@ -12,10 +12,12 @@ const SocialSignIn = () => {
     let errorElement;
     if (error) {
         errorElement = <div>
-            <p className='text-danger'>Error: {error.message}</p>
+            <p className='text-danger'>Error: {error?.message}</p>
         </div>
 
     }
+
+
     if (user) {
         navigate('/home')
     }
@@ -28,7 +30,7 @@ const SocialSignIn = () => {
 
                     <form className='mx-auto my-4'>
                         {errorElement}
-                        <Button onClick={() => signInWithGoogle()} className='w-50' variant="secondary" size="lg">  <img className='googleimge' src={googleimg} alt="" />
+                        <Button className='w-50 mx-auto d-block my-3' onClick={() => signInWithGoogle()} variant="secondary" size="lg">  <img className='googleimge' src={googleimg} alt="" />
                             Start with Google
                         </Button>
                     </form>

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-
+import './Home.css'
 import bannerimg from '../../images/banner.png'
 import Service from '../Service/Service';
 
@@ -25,8 +25,8 @@ const Home = () => {
                     </h1>
                     <p className='text-light'>Like any great agency, we are only as good as the result we deliver of our recent work</p>
 
-                    <Link to='/services'>
-                        <Button variant="primary" >
+                    <Link to='/signin'>
+                        <Button className='w-50 mx-auto d-block my-3' variant="primary" >
                             GET STARTED
                         </Button>{ }
                     </Link>
@@ -40,9 +40,7 @@ const Home = () => {
             </div>
             <div id='#servises' className="services ">
                 <h2 className='text-center bg-dark text-light mt-1 py-2' >Our Services</h2>
-                <div className='row row-cols-3 w-100'>
-
-
+                <div className=' service-card row row-cols-3 w-100'>
                     {
                         Services.map(service => <Service
                             key={service.id}
