@@ -6,6 +6,7 @@ import auth from '../../firebase.init';
 import SocialSignIn from '../SignIn/SocialSignIn/SocialSignIn';
 
 const SignUp = () => {
+    const [agree, setAgree] = useState(false);
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
@@ -46,9 +47,10 @@ const SignUp = () => {
 
         createUserWithEmailAndPassword(email, password);
 
-
-
     }
+
+
+
     return (
         <div>
             <h3 className='w-50 mx-auto bg-dark mt-2 text-light py-2 px-5 text-center'>Register Here</h3>
@@ -64,9 +66,10 @@ const SignUp = () => {
                     <Form.Control onBlur={handleConfirmPasswordBlur} type="password" placeholder="Confirm Password" required />
                 </Form.Group>
                 <p className='text-danger'>{error}</p>
+
                 <Form.Label className='mx-2'>Terms and Condirions </Form.Label>
-                <input type="checkbox" class="form-check-input" id="exampleCheck1"></input>
-                <Button className='w-50 mx-auto d-block my-3' variant="primary" type="submit">
+                <input onClick={() => setAgree(!agree)} type="checkbox" class="form-check-input" id="terms"></input>
+                <Button disabled={!agree} className='w-50 mx-auto d-block my-3' variant="primary" type="submit">
                     Sign Up
                 </Button>
                 <p>
