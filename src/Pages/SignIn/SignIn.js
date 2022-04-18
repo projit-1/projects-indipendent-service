@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
+import { useSendPasswordResetEmail, useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
 
@@ -18,6 +18,9 @@ const SignIn = () => {
         loading,
         error,
     ] = useSignInWithEmailAndPassword(auth);
+
+    const [sendPasswordResetEmail, sending] = useSendPasswordResetEmail(auth
+    );
 
     const navigate = useNavigate();
 
@@ -37,6 +40,9 @@ const SignIn = () => {
         navigate(from, { replace: true });
     }
 
+    // const resetPassword = () => {
+
+    // }
 
     const handleUserSignIn = event => {
         event.preventDefault();
@@ -66,6 +72,9 @@ const SignIn = () => {
                 <p>
                     New to NS Architect Ltd.? <Link className='form-link' to='/signup'>Create an account</Link>
                 </p>
+                {/* <p>
+                    Forgate password? <Link onClick={resetPassword}>Reset Password</Link>
+                </p> */}
             </Form>
 
             <div className='d-flex w-50 mx-auto'>
@@ -75,22 +84,7 @@ const SignIn = () => {
             </div>
 
             <SocialSignIn></SocialSignIn>
-            {/* <div className="with-google ">
-                <div>
 
-                    <form className='mx-auto my-4'>
-
-                        <Button className='w-50' variant="secondary" size="lg">  <img className='googleimge' src={googleimg} alt="" />
-                            Start with Google
-                        </Button>
-                    </form>
-                </div>
-                <form className='mx-auto'>
-                    <Button className='w-50 my-2' variant="secondary" size="lg">
-                        Start with Facebook
-                    </Button>
-                </form>
-            </div> */}
         </div>
     );
 };

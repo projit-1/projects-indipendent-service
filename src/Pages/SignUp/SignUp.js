@@ -64,6 +64,8 @@ const SignUp = () => {
                     <Form.Control onBlur={handleConfirmPasswordBlur} type="password" placeholder="Confirm Password" required />
                 </Form.Group>
                 <p className='text-danger'>{error}</p>
+                <Form.Label className='mx-2'>Terms and Condirions </Form.Label>
+                <input type="checkbox" class="form-check-input" id="exampleCheck1"></input>
                 <Button className='w-50 mx-auto d-block my-3' variant="primary" type="submit">
                     Sign Up
                 </Button>
