@@ -3,7 +3,10 @@ import { Button, Form } from 'react-bootstrap';
 import { useSignInWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import auth from '../../firebase.init';
+
 import './signIn.css'
+import SocialSignIn from './SocialSignIn/SocialSignIn';
+
 
 const SignIn = () => {
     const [email, setEmail] = useState("");
@@ -70,18 +73,24 @@ const SignIn = () => {
                 <div> <h5>or</h5></div>
                 <div className=' sign w-100'></div>
             </div>
-            <div className="with-google ">
-                <form className='mx-auto my-2'>
-                    <Button className='w-50' variant="secondary" size="lg">
-                        Start with Google
-                    </Button>
-                </form>
+
+            <SocialSignIn></SocialSignIn>
+            {/* <div className="with-google ">
+                <div>
+
+                    <form className='mx-auto my-4'>
+
+                        <Button className='w-50' variant="secondary" size="lg">  <img className='googleimge' src={googleimg} alt="" />
+                            Start with Google
+                        </Button>
+                    </form>
+                </div>
                 <form className='mx-auto'>
                     <Button className='w-50 my-2' variant="secondary" size="lg">
                         Start with Facebook
                     </Button>
                 </form>
-            </div>
+            </div> */}
         </div>
     );
 };
